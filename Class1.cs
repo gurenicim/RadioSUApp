@@ -13,6 +13,7 @@ namespace Radio_App
         string _caption;
         AutoClosingMessageBox(string text, string caption, int timeout)
         {
+            
             _caption = caption;
             _timeoutTimer = new System.Threading.Timer(OnTimerElapsed,
                 null, timeout, System.Threading.Timeout.Infinite);
